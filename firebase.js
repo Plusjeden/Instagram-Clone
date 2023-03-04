@@ -1,4 +1,3 @@
-// Import the functions you need from the SDKs you need
 
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
@@ -10,28 +9,21 @@ import {
   getReactNativePersistence,
 } from "firebase/auth/react-native";
 
-// TODO: Add SDKs for Firebase products that you want to use
-
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-
 const firebaseConfig = {
-  apiKey: "AIzaSyDPAukrdEBx42xb6Qu9BacWT7M9GfDBgYU",
+  apiKey: "",
 
-  authDomain: "coolapp-45881.firebaseapp.com",
+  authDomain: "",
 
-  projectId: "coolapp-45881",
+  projectId: "",
 
-  storageBucket: "coolapp-45881.appspot.com",
+  storageBucket: "",
 
-  messagingSenderId: "884579815800",
+  messagingSenderId: "",
 
-  appId: "1:884579815800:web:c16ad28b35bf85a42eb88d",
+  appId: "",
 };
 export const app = initializeApp(firebaseConfig);
-// Initialize Firebase
-//export const auth = getAuth(app);
+
 export const auth = initializeAuth(app, {
   persistence: getReactNativePersistence(AsyncStorage),
 });
